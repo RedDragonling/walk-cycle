@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.box {
+  border: 1px solid red;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+
+#walkcycle-1 {
+  height: 100%;
+  width: 100%;
+  background-image: url(img/circle_idle.png);
+  background-size: cover;
+  /* animation: walk-up 1s infinite; */
+}
+
+@keyframes walk-up {
+  0% {
+    background-image: url(img/circle_up1.png);
+  }
+  33% {
+    background-image: url(img/circle_up2.png);
+  }
+  66% {
+    background-image: url(img/circle_up3.png);
+  }
+  100% {
+    background-image: url(img/circle_up1.png);
+  }
+}
+@keyframes walk-down {
+  0% {
+    background-image: url(img/circle_down1.png);
+  }
+  33% {
+    background-image: url(img/circle_down2.png);
+  }
+  66% {
+    background-image: url(img/circle_down3.png);
+  }
+  100% {
+    background-image: url(img/circle_down1.png);
+  }
+}
+@keyframes walk-left {
+  0% {
+    background-image: url(img/circle_left1.png);
+  }
+  33% {
+    background-image: url(img/circle_left2.png);
+  }
+  66% {
+    background-image: url(img/circle_left3.png);
+  }
+  100% {
+    background-image: url(img/circle_left1.png);
+  }
+}
+@keyframes walk-right {
+  0% {
+    background-image: url(img/circle_right1.png);
+  }
+  33% {
+    background-image: url(img/circle_right2.png);
+  }
+  66% {
+    background-image: url(img/circle_right3.png);
+  }
+  100% {
+    background-image: url(img/circle_right1.png);
+  }
+}
